@@ -1,0 +1,6 @@
+framework module Pods_FiPay_eWallet_FiPay_eWalletUITests {
+  umbrella header "Pods-FiPay-eWallet-FiPay-eWalletUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

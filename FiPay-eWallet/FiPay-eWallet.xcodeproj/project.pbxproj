@@ -1,0 +1,857 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11F1E8BCF9846042BFADB6F2 /* Pods_FiPay_eWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942F3D66D8B1555C5524D5C6 /* Pods_FiPay_eWallet.framework */; };
+		21A65E60792635C34163C5B2 /* Pods_FiPay_eWallet_FiPay_eWalletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2431142FCB77308490FBBB94 /* Pods_FiPay_eWallet_FiPay_eWalletUITests.framework */; };
+		A1021A7A27AD101F008E7275 /* Deposits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1021A7927AD101F008E7275 /* Deposits.swift */; };
+		A1021A7C27AD630C008E7275 /* Transfers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1021A7B27AD630C008E7275 /* Transfers.swift */; };
+		A115C90527A96867008FDEE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A115C90427A96867008FDEE0 /* AppDelegate.swift */; };
+		A115C90727A96867008FDEE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A115C90627A96867008FDEE0 /* SceneDelegate.swift */; };
+		A115C90927A96867008FDEE0 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A115C90827A96867008FDEE0 /* InitialViewController.swift */; };
+		A115C90C27A96867008FDEE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A115C90A27A96867008FDEE0 /* Main.storyboard */; };
+		A115C90E27A96867008FDEE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A115C90D27A96867008FDEE0 /* Assets.xcassets */; };
+		A115C91127A96867008FDEE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A115C90F27A96867008FDEE0 /* LaunchScreen.storyboard */; };
+		A115C91C27A96867008FDEE0 /* FiPay_eWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A115C91B27A96867008FDEE0 /* FiPay_eWalletTests.swift */; };
+		A115C92627A96867008FDEE0 /* FiPay_eWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A115C92527A96867008FDEE0 /* FiPay_eWalletUITests.swift */; };
+		A115C92827A96867008FDEE0 /* FiPay_eWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A115C92727A96867008FDEE0 /* FiPay_eWalletUITestsLaunchTests.swift */; };
+		A115C93727A982D3008FDEE0 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A115C93627A982D3008FDEE0 /* SignViewController.swift */; };
+		A115C93B27A99288008FDEE0 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A115C93A27A99288008FDEE0 /* CreateViewController.swift */; };
+		A1248ACF27AABB6400100279 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1248ACE27AABB6400100279 /* TransactionsViewController.swift */; };
+		A1248AD127AAE01000100279 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1248AD027AAE01000100279 /* HomeViewController.swift */; };
+		A1248AD327AB228D00100279 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1248AD227AB228D00100279 /* SettingsViewController.swift */; };
+		A156F8FE27AC03A800817AD4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A156F8FD27AC03A800817AD4 /* GoogleService-Info.plist */; };
+		A156F90027AC518B00817AD4 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A156F8FF27AC518B00817AD4 /* ConversionViewController.swift */; };
+		A156F90227AC6E8300817AD4 /* Purshaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A156F90127AC6E8300817AD4 /* Purshaces.swift */; };
+		A162F54327B449250080A71A /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162F54227B449250080A71A /* RegisterRequest.swift */; };
+		A1A037A727B2C0EF008AA3CF /* PurshaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A037A627B2C0EF008AA3CF /* PurshaceCell.swift */; };
+		A1F7D83B27B14F4500328AC5 /* TransferRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F7D83A27B14F4500328AC5 /* TransferRequest.swift */; };
+		A1F7D83D27B1501C00328AC5 /* DepositRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F7D83C27B1501C00328AC5 /* DepositRequest.swift */; };
+		A1F7D83F27B1502F00328AC5 /* PurshacesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F7D83E27B1502F00328AC5 /* PurshacesRequest.swift */; };
+		D15C86890501B17135C6A162 /* Pods_FiPay_eWalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB732D21ED644AE1A8925F2 /* Pods_FiPay_eWalletTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A115C91827A96867008FDEE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A115C8F927A96867008FDEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A115C90027A96867008FDEE0;
+			remoteInfo = "FiPay-eWallet";
+		};
+		A115C92227A96867008FDEE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A115C8F927A96867008FDEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A115C90027A96867008FDEE0;
+			remoteInfo = "FiPay-eWallet";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F60B764142DE6E87104E8A9 /* Pods-FiPay-eWallet-FiPay-eWalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiPay-eWallet-FiPay-eWalletUITests.debug.xcconfig"; path = "Target Support Files/Pods-FiPay-eWallet-FiPay-eWalletUITests/Pods-FiPay-eWallet-FiPay-eWalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		18E4A876C83F2A284FAD6601 /* Pods-FiPay-eWallet-FiPay-eWalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiPay-eWallet-FiPay-eWalletUITests.release.xcconfig"; path = "Target Support Files/Pods-FiPay-eWallet-FiPay-eWalletUITests/Pods-FiPay-eWallet-FiPay-eWalletUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2431142FCB77308490FBBB94 /* Pods_FiPay_eWallet_FiPay_eWalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiPay_eWallet_FiPay_eWalletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		363025C2E83BF328978F369B /* Pods-FiPay-eWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiPay-eWalletTests.release.xcconfig"; path = "Target Support Files/Pods-FiPay-eWalletTests/Pods-FiPay-eWalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		83E2AC51356579258F93E79E /* Pods-FiPay-eWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiPay-eWalletTests.debug.xcconfig"; path = "Target Support Files/Pods-FiPay-eWalletTests/Pods-FiPay-eWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		942F3D66D8B1555C5524D5C6 /* Pods_FiPay_eWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiPay_eWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1021A7927AD101F008E7275 /* Deposits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deposits.swift; sourceTree = "<group>"; };
+		A1021A7B27AD630C008E7275 /* Transfers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transfers.swift; sourceTree = "<group>"; };
+		A115C90127A96867008FDEE0 /* FiPay-eWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FiPay-eWallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A115C90427A96867008FDEE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A115C90627A96867008FDEE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A115C90827A96867008FDEE0 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		A115C90B27A96867008FDEE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A115C90D27A96867008FDEE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A115C91027A96867008FDEE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A115C91227A96867008FDEE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A115C91727A96867008FDEE0 /* FiPay-eWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FiPay-eWalletTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A115C91B27A96867008FDEE0 /* FiPay_eWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiPay_eWalletTests.swift; sourceTree = "<group>"; };
+		A115C92127A96867008FDEE0 /* FiPay-eWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FiPay-eWalletUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A115C92527A96867008FDEE0 /* FiPay_eWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiPay_eWalletUITests.swift; sourceTree = "<group>"; };
+		A115C92727A96867008FDEE0 /* FiPay_eWalletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiPay_eWalletUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A115C93627A982D3008FDEE0 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		A115C93A27A99288008FDEE0 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		A1248ACE27AABB6400100279 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		A1248AD027AAE01000100279 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A1248AD227AB228D00100279 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A156F8FD27AC03A800817AD4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A156F8FF27AC518B00817AD4 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		A156F90127AC6E8300817AD4 /* Purshaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purshaces.swift; sourceTree = "<group>"; };
+		A162F54227B449250080A71A /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		A1A037A627B2C0EF008AA3CF /* PurshaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurshaceCell.swift; sourceTree = "<group>"; };
+		A1F7D83A27B14F4500328AC5 /* TransferRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferRequest.swift; sourceTree = "<group>"; };
+		A1F7D83C27B1501C00328AC5 /* DepositRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositRequest.swift; sourceTree = "<group>"; };
+		A1F7D83E27B1502F00328AC5 /* PurshacesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurshacesRequest.swift; sourceTree = "<group>"; };
+		C51FDB9E38D6570BA3BCB9C6 /* Pods-FiPay-eWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiPay-eWallet.release.xcconfig"; path = "Target Support Files/Pods-FiPay-eWallet/Pods-FiPay-eWallet.release.xcconfig"; sourceTree = "<group>"; };
+		DCB732D21ED644AE1A8925F2 /* Pods_FiPay_eWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiPay_eWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E94EDB7E5C96E27F8DAE8BB5 /* Pods-FiPay-eWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiPay-eWallet.debug.xcconfig"; path = "Target Support Files/Pods-FiPay-eWallet/Pods-FiPay-eWallet.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A115C8FE27A96867008FDEE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F1E8BCF9846042BFADB6F2 /* Pods_FiPay_eWallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A115C91427A96867008FDEE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15C86890501B17135C6A162 /* Pods_FiPay_eWalletTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A115C91E27A96867008FDEE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21A65E60792635C34163C5B2 /* Pods_FiPay_eWallet_FiPay_eWalletUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45D32F85F8B3E09F4A1A48EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				942F3D66D8B1555C5524D5C6 /* Pods_FiPay_eWallet.framework */,
+				2431142FCB77308490FBBB94 /* Pods_FiPay_eWallet_FiPay_eWalletUITests.framework */,
+				DCB732D21ED644AE1A8925F2 /* Pods_FiPay_eWalletTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A115C8F827A96867008FDEE0 = {
+			isa = PBXGroup;
+			children = (
+				A115C90327A96867008FDEE0 /* FiPay-eWallet */,
+				A115C91A27A96867008FDEE0 /* FiPay-eWalletTests */,
+				A115C92427A96867008FDEE0 /* FiPay-eWalletUITests */,
+				A115C90227A96867008FDEE0 /* Products */,
+				C900E8ADB7B314FC920E8C67 /* Pods */,
+				45D32F85F8B3E09F4A1A48EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A115C90227A96867008FDEE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A115C90127A96867008FDEE0 /* FiPay-eWallet.app */,
+				A115C91727A96867008FDEE0 /* FiPay-eWalletTests.xctest */,
+				A115C92127A96867008FDEE0 /* FiPay-eWalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A115C90327A96867008FDEE0 /* FiPay-eWallet */ = {
+			isa = PBXGroup;
+			children = (
+				A115C93C27A9BF73008FDEE0 /* Model */,
+				A115C93827A983E2008FDEE0 /* View */,
+				A115C93927A9840F008FDEE0 /* Controller */,
+				A1F7D83927B14ECE00328AC5 /* API requirement */,
+				A115C94A27A9C1D1008FDEE0 /* Others */,
+				A115C90D27A96867008FDEE0 /* Assets.xcassets */,
+				A115C91227A96867008FDEE0 /* Info.plist */,
+				A156F8FD27AC03A800817AD4 /* GoogleService-Info.plist */,
+			);
+			path = "FiPay-eWallet";
+			sourceTree = "<group>";
+		};
+		A115C91A27A96867008FDEE0 /* FiPay-eWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				A115C91B27A96867008FDEE0 /* FiPay_eWalletTests.swift */,
+			);
+			path = "FiPay-eWalletTests";
+			sourceTree = "<group>";
+		};
+		A115C92427A96867008FDEE0 /* FiPay-eWalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A115C92527A96867008FDEE0 /* FiPay_eWalletUITests.swift */,
+				A115C92727A96867008FDEE0 /* FiPay_eWalletUITestsLaunchTests.swift */,
+			);
+			path = "FiPay-eWalletUITests";
+			sourceTree = "<group>";
+		};
+		A115C93827A983E2008FDEE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A115C90A27A96867008FDEE0 /* Main.storyboard */,
+				A115C90F27A96867008FDEE0 /* LaunchScreen.storyboard */,
+				A1A037A627B2C0EF008AA3CF /* PurshaceCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A115C93927A9840F008FDEE0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A115C90827A96867008FDEE0 /* InitialViewController.swift */,
+				A115C93627A982D3008FDEE0 /* SignViewController.swift */,
+				A115C93A27A99288008FDEE0 /* CreateViewController.swift */,
+				A1248AD027AAE01000100279 /* HomeViewController.swift */,
+				A1248ACE27AABB6400100279 /* TransactionsViewController.swift */,
+				A1248AD227AB228D00100279 /* SettingsViewController.swift */,
+				A156F8FF27AC518B00817AD4 /* ConversionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A115C93C27A9BF73008FDEE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1021A7927AD101F008E7275 /* Deposits.swift */,
+				A156F90127AC6E8300817AD4 /* Purshaces.swift */,
+				A1021A7B27AD630C008E7275 /* Transfers.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A115C94A27A9C1D1008FDEE0 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A115C90427A96867008FDEE0 /* AppDelegate.swift */,
+				A115C90627A96867008FDEE0 /* SceneDelegate.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		A1F7D83927B14ECE00328AC5 /* API requirement */ = {
+			isa = PBXGroup;
+			children = (
+				A1F7D83C27B1501C00328AC5 /* DepositRequest.swift */,
+				A1F7D83E27B1502F00328AC5 /* PurshacesRequest.swift */,
+				A1F7D83A27B14F4500328AC5 /* TransferRequest.swift */,
+				A162F54227B449250080A71A /* RegisterRequest.swift */,
+			);
+			path = "API requirement";
+			sourceTree = "<group>";
+		};
+		C900E8ADB7B314FC920E8C67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E94EDB7E5C96E27F8DAE8BB5 /* Pods-FiPay-eWallet.debug.xcconfig */,
+				C51FDB9E38D6570BA3BCB9C6 /* Pods-FiPay-eWallet.release.xcconfig */,
+				0F60B764142DE6E87104E8A9 /* Pods-FiPay-eWallet-FiPay-eWalletUITests.debug.xcconfig */,
+				18E4A876C83F2A284FAD6601 /* Pods-FiPay-eWallet-FiPay-eWalletUITests.release.xcconfig */,
+				83E2AC51356579258F93E79E /* Pods-FiPay-eWalletTests.debug.xcconfig */,
+				363025C2E83BF328978F369B /* Pods-FiPay-eWalletTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A115C90027A96867008FDEE0 /* FiPay-eWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A115C92B27A96867008FDEE0 /* Build configuration list for PBXNativeTarget "FiPay-eWallet" */;
+			buildPhases = (
+				A582A63A2B49698F001AC1C7 /* [CP] Check Pods Manifest.lock */,
+				A115C8FD27A96867008FDEE0 /* Sources */,
+				A115C8FE27A96867008FDEE0 /* Frameworks */,
+				A115C8FF27A96867008FDEE0 /* Resources */,
+				D2FC7ED2DC148B5DD6109B81 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FiPay-eWallet";
+			productName = "FiPay-eWallet";
+			productReference = A115C90127A96867008FDEE0 /* FiPay-eWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A115C91627A96867008FDEE0 /* FiPay-eWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A115C92E27A96867008FDEE0 /* Build configuration list for PBXNativeTarget "FiPay-eWalletTests" */;
+			buildPhases = (
+				377CC6B5080076937C455E61 /* [CP] Check Pods Manifest.lock */,
+				A115C91327A96867008FDEE0 /* Sources */,
+				A115C91427A96867008FDEE0 /* Frameworks */,
+				A115C91527A96867008FDEE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A115C91927A96867008FDEE0 /* PBXTargetDependency */,
+			);
+			name = "FiPay-eWalletTests";
+			productName = "FiPay-eWalletTests";
+			productReference = A115C91727A96867008FDEE0 /* FiPay-eWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A115C92027A96867008FDEE0 /* FiPay-eWalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A115C93127A96867008FDEE0 /* Build configuration list for PBXNativeTarget "FiPay-eWalletUITests" */;
+			buildPhases = (
+				E4D58FFF0759D946870CE908 /* [CP] Check Pods Manifest.lock */,
+				A115C91D27A96867008FDEE0 /* Sources */,
+				A115C91E27A96867008FDEE0 /* Frameworks */,
+				A115C91F27A96867008FDEE0 /* Resources */,
+				FED6434C57B565F6AF680B67 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A115C92327A96867008FDEE0 /* PBXTargetDependency */,
+			);
+			name = "FiPay-eWalletUITests";
+			productName = "FiPay-eWalletUITests";
+			productReference = A115C92127A96867008FDEE0 /* FiPay-eWalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A115C8F927A96867008FDEE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A115C90027A96867008FDEE0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A115C91627A96867008FDEE0 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A115C90027A96867008FDEE0;
+					};
+					A115C92027A96867008FDEE0 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A115C90027A96867008FDEE0;
+					};
+				};
+			};
+			buildConfigurationList = A115C8FC27A96867008FDEE0 /* Build configuration list for PBXProject "FiPay-eWallet" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A115C8F827A96867008FDEE0;
+			productRefGroup = A115C90227A96867008FDEE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A115C90027A96867008FDEE0 /* FiPay-eWallet */,
+				A115C91627A96867008FDEE0 /* FiPay-eWalletTests */,
+				A115C92027A96867008FDEE0 /* FiPay-eWalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A115C8FF27A96867008FDEE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A115C91127A96867008FDEE0 /* LaunchScreen.storyboard in Resources */,
+				A156F8FE27AC03A800817AD4 /* GoogleService-Info.plist in Resources */,
+				A115C90E27A96867008FDEE0 /* Assets.xcassets in Resources */,
+				A115C90C27A96867008FDEE0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A115C91527A96867008FDEE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A115C91F27A96867008FDEE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		377CC6B5080076937C455E61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FiPay-eWalletTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A582A63A2B49698F001AC1C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FiPay-eWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2FC7ED2DC148B5DD6109B81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FiPay-eWallet/Pods-FiPay-eWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FiPay-eWallet/Pods-FiPay-eWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FiPay-eWallet/Pods-FiPay-eWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4D58FFF0759D946870CE908 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FiPay-eWallet-FiPay-eWalletUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FED6434C57B565F6AF680B67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FiPay-eWallet-FiPay-eWalletUITests/Pods-FiPay-eWallet-FiPay-eWalletUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FiPay-eWallet-FiPay-eWalletUITests/Pods-FiPay-eWallet-FiPay-eWalletUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FiPay-eWallet-FiPay-eWalletUITests/Pods-FiPay-eWallet-FiPay-eWalletUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A115C8FD27A96867008FDEE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F7D83D27B1501C00328AC5 /* DepositRequest.swift in Sources */,
+				A115C93B27A99288008FDEE0 /* CreateViewController.swift in Sources */,
+				A1A037A727B2C0EF008AA3CF /* PurshaceCell.swift in Sources */,
+				A115C90927A96867008FDEE0 /* InitialViewController.swift in Sources */,
+				A156F90227AC6E8300817AD4 /* Purshaces.swift in Sources */,
+				A1248ACF27AABB6400100279 /* TransactionsViewController.swift in Sources */,
+				A115C90527A96867008FDEE0 /* AppDelegate.swift in Sources */,
+				A156F90027AC518B00817AD4 /* ConversionViewController.swift in Sources */,
+				A1021A7C27AD630C008E7275 /* Transfers.swift in Sources */,
+				A115C90727A96867008FDEE0 /* SceneDelegate.swift in Sources */,
+				A1F7D83F27B1502F00328AC5 /* PurshacesRequest.swift in Sources */,
+				A1F7D83B27B14F4500328AC5 /* TransferRequest.swift in Sources */,
+				A162F54327B449250080A71A /* RegisterRequest.swift in Sources */,
+				A1248AD127AAE01000100279 /* HomeViewController.swift in Sources */,
+				A115C93727A982D3008FDEE0 /* SignViewController.swift in Sources */,
+				A1248AD327AB228D00100279 /* SettingsViewController.swift in Sources */,
+				A1021A7A27AD101F008E7275 /* Deposits.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A115C91327A96867008FDEE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A115C91C27A96867008FDEE0 /* FiPay_eWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A115C91D27A96867008FDEE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A115C92627A96867008FDEE0 /* FiPay_eWalletUITests.swift in Sources */,
+				A115C92827A96867008FDEE0 /* FiPay_eWalletUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A115C91927A96867008FDEE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A115C90027A96867008FDEE0 /* FiPay-eWallet */;
+			targetProxy = A115C91827A96867008FDEE0 /* PBXContainerItemProxy */;
+		};
+		A115C92327A96867008FDEE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A115C90027A96867008FDEE0 /* FiPay-eWallet */;
+			targetProxy = A115C92227A96867008FDEE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A115C90A27A96867008FDEE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A115C90B27A96867008FDEE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A115C90F27A96867008FDEE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A115C91027A96867008FDEE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A115C92927A96867008FDEE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A115C92A27A96867008FDEE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A115C92C27A96867008FDEE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E94EDB7E5C96E27F8DAE8BB5 /* Pods-FiPay-eWallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FiPay-eWallet/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.swift.toodoo.FiPay-eWallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A115C92D27A96867008FDEE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C51FDB9E38D6570BA3BCB9C6 /* Pods-FiPay-eWallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FiPay-eWallet/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.swift.toodoo.FiPay-eWallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A115C92F27A96867008FDEE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E2AC51356579258F93E79E /* Pods-FiPay-eWalletTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.swift.toodoo.FiPay-eWalletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FiPay-eWallet.app/FiPay-eWallet";
+			};
+			name = Debug;
+		};
+		A115C93027A96867008FDEE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 363025C2E83BF328978F369B /* Pods-FiPay-eWalletTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.swift.toodoo.FiPay-eWalletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FiPay-eWallet.app/FiPay-eWallet";
+			};
+			name = Release;
+		};
+		A115C93227A96867008FDEE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F60B764142DE6E87104E8A9 /* Pods-FiPay-eWallet-FiPay-eWalletUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.swift.toodoo.FiPay-eWalletUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FiPay-eWallet";
+			};
+			name = Debug;
+		};
+		A115C93327A96867008FDEE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18E4A876C83F2A284FAD6601 /* Pods-FiPay-eWallet-FiPay-eWalletUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.swift.toodoo.FiPay-eWalletUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FiPay-eWallet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A115C8FC27A96867008FDEE0 /* Build configuration list for PBXProject "FiPay-eWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A115C92927A96867008FDEE0 /* Debug */,
+				A115C92A27A96867008FDEE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A115C92B27A96867008FDEE0 /* Build configuration list for PBXNativeTarget "FiPay-eWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A115C92C27A96867008FDEE0 /* Debug */,
+				A115C92D27A96867008FDEE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A115C92E27A96867008FDEE0 /* Build configuration list for PBXNativeTarget "FiPay-eWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A115C92F27A96867008FDEE0 /* Debug */,
+				A115C93027A96867008FDEE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A115C93127A96867008FDEE0 /* Build configuration list for PBXNativeTarget "FiPay-eWalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A115C93227A96867008FDEE0 /* Debug */,
+				A115C93327A96867008FDEE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A115C8F927A96867008FDEE0 /* Project object */;
+}
